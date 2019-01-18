@@ -69,7 +69,7 @@
 			echo "</center>";
 
 		}
-		public function Pria(){
+		public function Pria($tinggi,$berat,$jk){
 
 			echo "<center>";
 
@@ -104,13 +104,11 @@ $bb= new calc();
 				echo "Berat Badan Anda ";
 				$bb->Wanita($berat,$tinggi,$jk);
 				echo "<br>";
-			}else{
+			}elseif($jk=='Pria'){
 				echo "Berat Badan Anda ";
 				$bb->Pria($berat,$tinggi,$jk);
 				echo "<br>";
 			}
 		echo "<center>";
 	}
-
-
 ?>
